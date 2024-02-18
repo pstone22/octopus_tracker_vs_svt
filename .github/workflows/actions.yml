@@ -2,7 +2,7 @@ name: Update Octopus Tracker information
 
 on:
   schedule:
-    - cron: '*/15 * * * *' #'0 11 * * *' # At 11:00 every day
+    - cron: '0 11 * * *' # At 11:00 every day
 
 jobs:
   build:
