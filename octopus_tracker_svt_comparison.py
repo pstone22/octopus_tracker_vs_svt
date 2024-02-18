@@ -56,6 +56,7 @@ df_prices = df_prices.dropna(subset=f"{TRACKER}-{REGION}")
 
 
 # Export data as CSV
+df_prices.sort_index(inplace=True, ascending=False)
 df_prices.to_csv('octo_tracker_vs_svt.csv')
 
 
