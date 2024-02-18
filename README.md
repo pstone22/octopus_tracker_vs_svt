@@ -1,2 +1,3 @@
-# octopus_tracker_vs_svt
-Comparison of the Octopus Tracker tariff against the standard variable tariff
+# Octopus Tracker tariff vs the standard variable tariff
+## Region: London
+![Graph of Octopus Tracker tariff vs. the SVT](octo_tracker_vs_svt.png)
