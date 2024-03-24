@@ -9,11 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: checkout repo content
-        uses: actions/checkout@v2 # checkout the repository content to github runner
+      - name: Checkout
+        uses: actions/checkout@v4  # Checkout repository so worflow can access it
 
-      - name: setup python
-        uses: actions/setup-python@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11' # install the python version needed
           
@@ -32,8 +32,8 @@ jobs:
           git add -A
           git diff-index --quiet HEAD || (git commit -a -m "Update rates" --allow-empty)
           
-      - name: push changes
-        uses: ad-m/github-push-action@v0.6.0
+      - name: GitHub Push
+        uses: ad-m/github-push-action@v0.8
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: main 
